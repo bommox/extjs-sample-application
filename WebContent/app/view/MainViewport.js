@@ -1,6 +1,10 @@
 Ext.define('App.view.MainViewport', {
     extend : 'Ext.container.Viewport',
-    requires : ['App.view.viewport.Header', 'App.view.viewport.Menu'],
+    requires : [
+                'App.view.viewport.Header', 
+                'App.view.viewport.Menu',
+                'App.view.viewport.Main'
+    ],
 	layout : 'border',
     items : [{
 		region: 'north',
@@ -10,7 +14,7 @@ Ext.define('App.view.MainViewport', {
         xtype: 'viewport.menu'
     },{
         region: 'center',
-        xtype: 'panel',
-        items: []
+        xtype: 'viewport.main',
+        
     }]
 });

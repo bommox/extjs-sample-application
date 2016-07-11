@@ -8,7 +8,7 @@ Ext.application({
     
     requires : ['App.view.MainViewport'],
     
-    views: [],
+    views: ['App.view.example.SampleForm01', 'App.view.example.Calculator'],
     models:[],
     stores: [],
     controllers: [],
