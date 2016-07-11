@@ -1,0 +1,14 @@
+.x-splash-icon{
+	background-image: url('img/iconMerca.png') !important;
+	height: 40px !important;
+	width: 40px !important;
+	margin: 0 auto !important;
+}
+
+.login_cls {
+	background-color: #5fa2dd !important;
+}
+
+body {
+	background-color: transparent !important;
+}
