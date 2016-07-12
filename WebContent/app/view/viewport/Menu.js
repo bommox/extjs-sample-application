@@ -12,9 +12,10 @@ Ext.define("App.view.viewport.Menu", {
         border: false,
         margin: '0 5 0 0',
         menu: [{
-            text: 'regular item 1'
+            text: 'Abrir calculadora',
+            mView : 'calculatorTab'
         },{
-            text: 'regular item 2'
+            text: 'Cerrar panel actual'
         },{
             text: 'regular item 3'
         }]

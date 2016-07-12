@@ -1,8 +1,7 @@
-Ext.define("App.view.example.SampleForm01", {
+Ext.define("App.view.SampleFormTab", {
 	extend: 'Ext.panel.Panel',
-    alias: 'widget.example.sampleForm01',    
+    alias: 'widget.sampleFormTab',    
     title : 'Registro de usuario',
-    width: 400,
     margin : 10,
     border: true,
     bodyBorder: true,

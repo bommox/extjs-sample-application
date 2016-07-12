@@ -8,10 +8,10 @@ Ext.application({
     
     requires : ['App.view.MainViewport'],
     
-    views: ['App.view.example.SampleForm01', 'App.view.example.Calculator'],
+    views: ['App.view.SampleFormTab', 'App.view.CalculatorTab'],
     models:[],
     stores: [],
-    controllers: [],
+    controllers: ["App.controller.menu.MenuController"],
     
     autoCreateViewport: 'App.view.MainViewport',
     
