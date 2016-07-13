@@ -6,7 +6,7 @@ Ext.define("App.view.viewport.Main", {
 	id : 'main_content',
 	items: [{
     	title : 'Formulario regisrtro',
-    	xtype : 'sampleFormTab',
-    	width: 400
+    	xtype : 'personaTab',
+    	closable : true
     }]
 });

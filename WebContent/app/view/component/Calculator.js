@@ -3,10 +3,9 @@ Ext.define("App.view.component.Calculator", {
 	alias : 'widget.component.calculator',
 	requires : [ "App.view.component.CalculatorController" ],
 	controller : 'component.calculator',
-
 	layout : {
 		type : 'vbox',
-		align : 'stretch'
+		align : 'stretch'	
 	},
 
 	items : [ {

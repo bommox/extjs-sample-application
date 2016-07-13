@@ -3,7 +3,6 @@ Ext.define("App.view.component.CalculatorController", {
 	alias: 'controller.component.calculator',
 	
 	onButtonClick : function(el, b,c, d) {
-		//var displayEl = this.getView().lookupComponent("calcDisplay");
 		var displayEl = this.getView().down('textfield');
 		var oldValue = displayEl.getValue();
 		var elValue = el.getText();

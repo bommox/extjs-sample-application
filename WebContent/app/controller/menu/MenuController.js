@@ -13,8 +13,9 @@ Ext.define("App.controller.menu.MenuController", {
 		if (openedOption) {
 			mainPanel.setActiveTab(openedOption);
 		} else {			
-			var myPanel = Ext.widget(btn.mView);
-			myPanel.setTitle("Mi Calculadora");
+			var myPanel = Ext.widget(btn.mView, {
+				closable : true
+			});
 			mainPanel.add(myPanel);
 			mainPanel.setActiveTab(myPanel);
 		}
