@@ -2,9 +2,10 @@ Ext.define('App.model.spotify.SpotifyArtistSong', {
     extend: 'Ext.data.Model',
     fields: ['id', 'name'],
 
-    proxy: Ext.create('Ext.data.proxy.Rest',{
+    proxy: {
         url: 'https://api.spotify.com/v1/artists',
         useDefaultXhrHeader : false,
+        type : 'rest',
         reader : {
         	type : 'json',
         	rootProperty : 'tracks',
@@ -15,5 +16,5 @@ Ext.define('App.model.spotify.SpotifyArtistSong', {
         		}
         	}
         }
-    })
+    }
 });

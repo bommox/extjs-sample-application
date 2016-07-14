@@ -2,8 +2,9 @@ Ext.define('App.model.spotify.SpotifySearchArtist', {
     extend: 'Ext.data.Model',
     fields: ['id', 'name', 'uri', 'image', 'totalFollowers'],
 
-    proxy: Ext.create('Ext.data.proxy.Rest',{
-        url: 'https://api.spotify.com/v1/search',
+    proxy: {
+        type : 'rest',	
+    	url: 'https://api.spotify.com/v1/search',
         useDefaultXhrHeader : false,
         reader : {
         	type : 'json',
@@ -19,5 +20,5 @@ Ext.define('App.model.spotify.SpotifySearchArtist', {
         		}
         	}
         }
-    })
+    }
 });
