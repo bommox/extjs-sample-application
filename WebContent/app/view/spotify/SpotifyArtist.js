@@ -9,27 +9,27 @@ Ext.define("App.view.spotify.SpotifyArtist", {
 	},
 	bodyPadding : 10,
 	items : [{
-		xtype : 'textfield',
-		name : 'nombre',
-		fieldLabel : 'Nombre',
-		allowBlank : false,
-		flex : 1
+		xtype : 'image',
+		name : 'aImage'
 	},{
 		xtype : 'textfield',
-		name : 'apellido',
-		fieldLabel : 'Apellido',
-		allowBlank : false,
-		flex : 1
+		name : 'followersTotal',
+		fieldLabel : 'Seguidores',
+		name : 'aFollowers'
 	},{
-		xtype : 'numberfield',
-		name : 'telefono',
-		fieldLabel : 'Telefono',
+		xtype : 'grid',		
 		flex : 1,
-		hideTrigger : true,
-		maxLength : 9,
-		minLength : 9
+		reference : 'artistGrid',
+		store : {
+			type : 'spotify.spotifyArtistSong'
+		},
+		columns : [{
+			text : 'Canción',
+			dataIndex : 'name',
+			flex : 1
+		}]
 	}],
 	listeners : {
-		beforerender : 'onBeforeRender'
+		afterrender : 'onAfterRender'
 	}
 });

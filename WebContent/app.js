@@ -6,8 +6,8 @@ Ext.application({
     requires : ['App.view.MainViewport'],
     
     views: ['SampleFormTab', 'CalculatorTab', 'PersonaTab', 'EquipoTab', 'SpotifyTab'],
-    models:['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist'],
-    stores: ['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist'],
+    models:['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist' , 'spotify.SpotifyArtistSong'],
+    stores: ['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist' , 'spotify.SpotifyArtistSong'],
     controllers: ["menu.MenuController"],
     
     autoCreateViewport: 'App.view.MainViewport',
