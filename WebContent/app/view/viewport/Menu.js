@@ -15,8 +15,11 @@ Ext.define("App.view.viewport.Menu", {
             text: 'Abrir calculadora',
             mView : 'calculatorTab'
         },{
-            text: 'Abrir buscador',
+            text: 'Personas',
             mView : 'personaTab'
+        },{
+            text: 'Equipos',
+            mView : 'equipoTab'
         },{
             text: 'regular item 3'
         }]

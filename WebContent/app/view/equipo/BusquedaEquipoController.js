@@ -1,6 +1,6 @@
-Ext.define('App.view.persona.BusquedaPersonaController', {
+Ext.define('App.view.equipo.BusquedaEquipoController', {
 	extend: 'Ext.app.ViewController',
-	alias : 'controller.persona.busquedaPersona',
+	alias : 'controller.equipo.busquedaEquipo',
 
 	
 	doClean : function() {
@@ -53,17 +53,17 @@ Ext.define('App.view.persona.BusquedaPersonaController', {
 	
 	_openEditModal : function(record) {
 		Ext.create('Ext.window.Window', {
-			title : 'Crear persona',
+			title : 'Crear Equipo',
 			width: 400,
 			items : {
-				xtype : 'persona.edicionPersona',
-				personaRecord : record
+				xtype : 'equipo.edicionEquipo',
+				equipoRecord : record
 			}
 		}).show();
 	},
 	
 	removeRecord : function(record) {
-		alert("Remove : " + record.get('nombre'));		
+		alert("Remove : " + record.get('ciudad'));		
 	}	
 
 });
