@@ -5,8 +5,8 @@ Ext.define("App.view.viewport.Main", {
 	activeTab : 0,
 	id : 'main_content',
 	items: [{
-    	title : 'Formulario regisrtro',
-    	xtype : 'personaTab',
+    	title : 'Primer trab',
+    	xtype : 'spotifyTab',
     	closable : true
     }]
 });

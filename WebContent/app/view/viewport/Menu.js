@@ -21,7 +21,8 @@ Ext.define("App.view.viewport.Menu", {
             text: 'Equipos',
             mView : 'equipoTab'
         },{
-            text: 'regular item 3'
+            text: 'Spotify',
+            mView : 'spotifyTab'
         }]
     },{
         xtype: 'button',

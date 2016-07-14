@@ -5,9 +5,9 @@ Ext.application({
     
     requires : ['App.view.MainViewport'],
     
-    views: ['SampleFormTab', 'CalculatorTab', 'PersonaTab', 'EquipoTab'],
-    models:['persona.Persona','equipo.Equipo'],
-    stores: ['persona.Persona','equipo.Equipo'],
+    views: ['SampleFormTab', 'CalculatorTab', 'PersonaTab', 'EquipoTab', 'SpotifyTab'],
+    models:['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist'],
+    stores: ['persona.Persona','equipo.Equipo', 'spotify.SpotifySearchArtist'],
     controllers: ["menu.MenuController"],
     
     autoCreateViewport: 'App.view.MainViewport',
